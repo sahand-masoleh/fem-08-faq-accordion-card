@@ -11,8 +11,8 @@ body {
 	/***** Primary *****/
 
 	/* Text */
-	--very-dark-desaturated-blue: hsl(238, 29%, 16%); /**/
-	--soft-red: hsl(14, 88%, 65%);
+	--very-dark-desaturated-blue: hsl(238, 29%, 16%); /* [open] summary */
+	--soft-red: hsl(14, 88%, 65%); /* summary:hover */
 
 	/* Gradient */
 	--soft-violet: hsl(273, 75%, 66%); /* Background gradient */
@@ -21,8 +21,8 @@ body {
 	/***** Neutral *****/
 
 	/* Text */
-	--very-dark-grayish-blue: hsl(237, 12%, 33%); /**/
-	--dark-grayish-blue: hsl(240, 6%, 50%); /**/
+	--very-dark-grayish-blue: hsl(237, 12%, 33%); /* summary */
+	--dark-grayish-blue: hsl(240, 6%, 50%); /* details p*/
 
 	/* Dividers */
 	--light-grayish-blue: hsl(240, 5%, 91%);
@@ -32,7 +32,6 @@ body {
 	grid-auto-rows: 1fr auto;
 	align-items: center;
 	justify-content: center;
-	/* font-size: 2.5vh; */
 
 	background: linear-gradient(var(--soft-violet), var(--soft-blue));
 }
@@ -78,6 +77,10 @@ summary {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+summary:hover {
+	color: var(--soft-red);
 }
 
 summary img {
@@ -135,15 +138,60 @@ hr {
 	color: var(--light-grayish-blue);
 }
 
-/* @media screen and (min-width: 376px) {
+@media screen and (min-width: 680px) {
 	main {
 		width: min(50em, 95vw);
-		margin: auto 0;
-		padding: 2em 5em 2em 50%;
+		margin: auto;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		background-color: white;
+		border-radius: 1em;
+		/* overflow: hidden; */
+	}
+
+	#text {
+		width: 20em;
+		min-width: 50%;
+		padding: 4em 0;
+		border-radius: unset;
+		box-shadow: unset;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	h1 {
+		margin: unset;
+	}
+
+	#image {
+		width: 100%;
+		overflow: hidden;
+		clip-path: fill-box;
 	}
 
 	#illustration {
-		left: 0;
-		top: 30%;
+		width: 25em;
+		left: -5em;
+		top: 50%;
+		transform: translateY(-50%);
 	}
-} */
+
+	#bg-pattern {
+		width: 50em;
+		left: -30em;
+		top: 50%;
+		transform: translateY(-60%);
+	}
+
+	#box {
+		position: absolute;
+		width: 10em;
+		left: -7em;
+		top: 50%;
+		transform: translateY(-25%);
+		z-index: 15;
+		filter: drop-shadow(0 1em 1em rgb(0, 0, 0, 0.25));
+	}
+}
