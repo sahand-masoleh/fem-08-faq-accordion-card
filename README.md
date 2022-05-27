@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/sahand-masoleh/fem-08-faq-accordion-card)
-- Live Site URL: [Github Pages](https://sahand-masoleh.guthub.io/fem-08-faq-accordion-card)
+- Live Site URL: [Github Pages](https://sahand-masoleh.github.io/fem-08-faq-accordion-card)
 
 ## My process
 
