@@ -135,7 +135,7 @@ hr {
 	color: var(--very-dark-desaturated-blue);
 }
 .attribution a {
-	color: var(--light-grayish-blue);
+	color: var(--light-grayish- blue);
 }
 
 @media screen and (min-width: 680px) {
@@ -147,6 +147,7 @@ hr {
 		grid-template-columns: 1fr 1fr;
 		background-color: white;
 		border-radius: 1em;
+		box-shadow: 0 2em 2em -1em rgb(0, 0, 0, 0.25);
 		/* overflow: hidden; */
 	}
 
